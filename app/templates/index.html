@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- Animated Background -->
     <div class="background-animation">
         <div class="gradient-orb orb-1"></div>
         <div class="gradient-orb orb-2"></div>
@@ -20,7 +19,6 @@
     </div>
 
     <div class="container">
-        <!-- Header -->
         <header class="header">
             <div class="header-content">
                 <div class="logo-section">
@@ -39,47 +37,6 @@
             </div>
         </header>
 
-        <!-- Statistics Dashboard -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                    <i class="fas fa-layer-group"></i>
-                </div>
-                <div class="stat-content">
-                    <div class="stat-value" id="totalCategories">6</div>
-                    <div class="stat-label">Total Categories</div>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <div class="stat-content">
-                    <div class="stat-value" id="biodegradableCount">2</div>
-                    <div class="stat-label">Biodegradable</div>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                    <i class="fas fa-recycle"></i>
-                </div>
-                <div class="stat-content">
-                    <div class="stat-value" id="recyclableCount">5</div>
-                    <div class="stat-label">Recyclable</div>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                    <i class="fas fa-seedling"></i>
-                </div>
-                <div class="stat-content">
-                    <div class="stat-value" id="organicCount">2</div>
-                    <div class="stat-label">Organic Types</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Main Content -->
         <div class="main-grid">
             <!-- Video Feed Section -->
             <div class="glass-card video-section">
@@ -107,27 +64,9 @@
                         </button>
                     </div>
 
-                    <div class="controls-row training-controls">
-                        <div class="training-label">
-                            <i class="fas fa-graduation-cap"></i> Train AI:
-                        </div>
-                        <select id="burstLabel" class="form-select">
-                            <option value="plastic">Plastic</option>
-                            <option value="paper">Paper</option>
-                            <option value="metal">Metal</option>
-                            <option value="glass">Glass</option>
-                            <option value="cardboard">Cardboard</option>
-                            <option value="trash">Trash</option>
-                        </select>
-                        <button class="btn btn-warning" onclick="startBurstTrain()">
-                            <i class="fas fa-images"></i> Burst Capture (10x)
-                        </button>
-                    </div>
-
                     <input type="file" id="imageUpload" accept="image/*" hidden>
                 </div>
 
-                <!-- Uploaded Image Result Container -->
                 <div id="uploadedImageContainer"
                     style="display: none; margin-top: 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px;">
                     <div class="card-header" style="justify-content: center; margin-bottom: 15px;">
@@ -157,50 +96,6 @@
             </div>
         </div>
 
-        <!-- Waste Categories -->
-        <div class="glass-card categories-section">
-            <div class="card-header">
-                <h2><i class="fas fa-th-large"></i> Waste Categories Guide</h2>
-            </div>
-            <div class="categories-grid" id="wasteCategories">
-                <!-- Will be populated by JavaScript -->
-            </div>
-        </div>
-
-        <!-- How It Works -->
-        <div class="glass-card how-it-works">
-            <div class="card-header">
-                <h2><i class="fas fa-info-circle"></i> How It Works</h2>
-            </div>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">📷</div>
-                    <h3>Capture</h3>
-                    <p>Use webcam or upload waste image</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">🤖</div>
-                    <h3>AI Analysis</h3>
-                    <p>ResNet18 model classifies waste type</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">🎯</div>
-                    <h3>Identify</h3>
-                    <p>Get detailed waste information</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">♻️</div>
-                    <h3>Dispose</h3>
-                    <p>Follow proper disposal guidelines</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
         <footer class="footer">
             <p>© 2025 AI Waste Classification System | Powered by ResNet18 & PyTorch</p>
         </footer>
