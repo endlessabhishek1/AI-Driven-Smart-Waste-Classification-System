@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -91,7 +91,8 @@
                     </span>
                 </div>
                 <div class="video-container">
-                    <img src="{{ url_for('video_feed') }}" alt="Video Feed" id="videoFeed" class="video-feed">
+                    <video id="videoFeed" class="video-feed" autoplay playsinline muted></video>
+                    <canvas id="captureCanvas" style="display:none;"></canvas>
                 </div>
                 <div class="controls">
                     <div class="controls-row">
